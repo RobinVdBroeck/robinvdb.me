@@ -39,7 +39,7 @@ export default class extends React.Component {
                 className="navbar-item"
               >
                 <span className="icon">
-                  <FontAwesomeIcon icon={["fab", "github"]} />
+                  <FontAwesomeIcon fixedWidth icon={["fab", "github"]} />
                 </span>
                 <span>Github</span>
               </a>
@@ -48,7 +48,7 @@ export default class extends React.Component {
                 className="navbar-item"
               >
                 <span className="icon">
-                  <FontAwesomeIcon icon={["fab", "linkedin"]} />
+                  <FontAwesomeIcon fixedWidth icon={["fab", "linkedin"]} />
                 </span>
                 <span>LinkedIn</span>
               </a>
@@ -63,7 +63,7 @@ export default class extends React.Component {
     const burger = document.querySelector(".navbar-burger");
 
     burger.addEventListener("click", () => {
-      const targetId = el.dataset.target;
+      const targetId = burger.dataset.target;
       const targetElement = document.getElementById(targetId);
 
       burger.classList.toggle("is-active");
