@@ -31,8 +31,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-static": "^5.1.8",
-    "reactbulma": "^1.1.1"
+    "react-static": "^5.1.8"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
