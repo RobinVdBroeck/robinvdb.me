@@ -53,11 +53,74 @@ export default class extends React.Component {
       <div className="content">
         <h1>Skills</h1>
         <p>
-          Hieronder ziet u een competentiematrix. Dit geeft uitleg over mijn
-          soft-skills. Voor meer informatie kunt u{" "}
-          <a href="/Competentiematrix-uitleg.pdf">deze pdf</a> bekijken.
+          Omdat ik bezig ben met mijn toegepaste informatica opleiding bezit of
+          ben ik bezig met het trainen van onderstaande skills:
         </p>
-        {skills.map(skill => <Table tableData={skill} />)}
+        <ul>
+          <li>
+            De professionele bachelor TI analyseert een probleem, vertaalt dit
+            naar een IT context en geeft de informatiebehoeften van een
+            organisatie gestructureerd weer door gebruik te maken van analyse-
+            en modelleringstechnieken.
+          </li>
+          <li>
+            De professionele bachelor TI verzamelt en verwerkt proces- en
+            datagegevens, slaat ze op en stelt ze ter beschikking, zodanig dat
+            deze op een correcte en efficiënte manier kunnen worden opgevraagd.
+          </li>
+          <li>
+            De professionele bachelor TI ontwerpt, bouwt, documenteert en test
+            kwalitatieve IT oplo ssingen.
+          </li>
+          <li>
+            De professionele bachelor TI installeert, configureert, beveiligt,
+            onderhoudt en ondersteunt IT oplossingen en past ze indien nodig aan
+            zodat ze blijven beantwoorden aan de veranderende behoeften van een
+            organisatie.
+          </li>
+          <li>
+            De professionele bachelor TI handelt deontologisch en
+            maatschappelijk verantwoord, conform bedrijfs- en
+            organisatiecontext, regelgeving, best practices en strategieën
+            vanuit eigen inzicht en kennis.
+          </li>
+          <li>
+            De professionele bachelor TI onderzoekt en evalueert kritisch
+            bestaande en innovatieve IT oplossingen.
+          </li>
+          <li>
+            De professionele bachelor TI geeft advies over IT oplossingen, -
+            producten, -diensten en –technologieën voor verschillende domeinen
+            en/of sectoren.
+          </li>
+          <li>
+            De professionele bachelor TI kan zelfstandig en in een
+            multidisciplinair en/of multicultureel team een opdracht op
+            projectmatige wijze aanpakken. De professionele bachelor TI kan
+            eenvoudig leidinggevende taken uitvoeren en een projectplan
+            ontwerpen, interpreteren, uitvoeren, aanpassen en toelichten.
+          </li>
+          <li>
+            De professionele bachelor TI communiceert minstens in het Nederlands
+            en het Engels, mondeling en schriftelijk aangepast aan het
+            doelpubliek.
+          </li>
+          <li>
+            De professionele bachelor TI houdt rekening met en handelt naar de
+            internationale context van het vakgebied.
+          </li>
+          <li>
+            De professionele ba chelor TI is ondernemend, neemt initiatief en
+            reageert op nieuwe ontwikkelingen en toepassingsdomeinen.
+          </li>
+          <li>
+            De professionele bachelor TI ondersteunt veranderingsprocessen bij
+            ingebruikname van IT oplossingen.
+          </li>
+        </ul>
+        <p>
+          Source: <a href="/DLR.pdf">DLR.pdf</a>
+        </p>
       </div>
     );
   }
