@@ -1,8 +1,16 @@
 import React from "react";
 import { Link } from "react-static";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import { classNames } from "./util.js";
 
 export default class extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    };
+  }
+
   render() {
     return (
       <nav className="navbar is-transparent is-primary">
@@ -14,14 +22,25 @@ export default class extends React.Component {
               </span>
               RobinVdB.me
             </Link>
-            <div className="navbar-burger" data-target="navMenu">
+            <div
+              className={classNames({
+                "navbar-burger": true,
+                "is-active": this.state.active
+              })}
+              onClick={this.handleBurgerClick.bind(this)}
+            >
               <span />
               <span />
               <span />
             </div>
           </div>
 
-          <div className="navbar-menu" id="navMenu">
+          <div
+            className={classNames({
+              "navbar-menu": true,
+              "is-active": this.state.active
+            })}
+          >
             <div className="navbar-start">
               <Link className="navbar-item" to="/projects">
                 Projects
@@ -52,6 +71,9 @@ export default class extends React.Component {
                 </span>
                 <span>LinkedIn</span>
               </a>
+              <a href="/cv-nl.pdf" className="navbar-item">
+                CV
+              </a>
             </div>
           </div>
         </div>
@@ -59,15 +81,9 @@ export default class extends React.Component {
     );
   }
 
-  componentDidMount() {
-    const burger = document.querySelector(".navbar-burger");
-
-    burger.addEventListener("click", () => {
-      const targetId = burger.dataset.target;
-      const targetElement = document.getElementById(targetId);
-
-      burger.classList.toggle("is-active");
-      targetElement.classList.toggle("is-active");
-    });
+  handleBurgerClick() {
+    this.setState(prevState => ({
+      active: !prevState.active
+    }));
   }
 }
