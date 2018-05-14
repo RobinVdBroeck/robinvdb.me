@@ -38,14 +38,17 @@ export default class extends React.Component {
       <div className="content">
         <h1>Skills</h1>
         <h2>IT-skills</h2>
-        <p>
-          Rating scale: 1 - 5 waarbij 1 = basis kennis en 5 = uitstekende kennis
-        </p>
+        <p />
         <table>
           <thead>
             <tr>
               <th>Skill</th>
-              <th>Hoeveel</th>
+              <th>
+                Kennis{" "}
+                <span style={{ fontWeight: "normal" }}>
+                  (1 = basis kennis - 5 = uitstekende kennis)
+                </span>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -71,7 +74,7 @@ export default class extends React.Component {
           </li>
           <li>
             De professionele bachelor TI ontwerpt, bouwt, documenteert en test
-            kwalitatieve IT oplo ssingen.
+            kwalitatieve IT oplossingen.
           </li>
           <li>
             De professionele bachelor TI installeert, configureert, beveiligt,

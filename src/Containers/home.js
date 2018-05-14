@@ -20,14 +20,12 @@ export default class extends React.Component {
               <p className="title">Hallo beste bezoeker,</p>
               <p>
                 Je bent net aangekomen op mijn persoonlijk portfolio. Kijk hier
-                gerust rond. Je kunt navigeren door mijn portfolio door vanboven
-                op de verschillende links te klikken. <br />
+                gerust rond. Je kunt navigeren door vanboven op de verschillende
+                links te klikken. <br />
                 Als ik iets voor u kan betekenen, neem dan gerust contact met me
                 op via het formulier op deze site. Ik neem dan zo snel mogelijk
-                contact met u op. Indien u zelf contact met mij wilt opnemen,
-                kunt u mijn gegevens vinden op mijn CV. (Te downloaden in de
-                balk hierboven) Ik zet deze om spam te vermijden niet in direct
-                op de site.
+                contact met u op. U kunt mijn gegevens vinden op mijn CV. (Te
+                downloaden in de navagatiebalk)
                 <br />
                 <br />
                 Met vriendelijke groeten, <br />
