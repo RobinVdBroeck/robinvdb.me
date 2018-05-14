@@ -22,6 +22,7 @@ export default class extends React.Component {
                     type="text"
                     placeholder="Robin Van den Broeck"
                     name="name"
+                    required
                   />
                   <span className="icon is-small is-left">
                     <FontAwesomeIcon icon={["fas", "user"]} />
@@ -35,6 +36,7 @@ export default class extends React.Component {
                     type="email"
                     placeholder="jouw-email@jouw-bedrijf.be"
                     name="_replyto"
+                    required
                   />
                   <span className="icon is-small is-left">
                     <FontAwesomeIcon icon={["fas", "envelope"]} />
@@ -74,6 +76,7 @@ export default class extends React.Component {
                     className="textarea"
                     placeholder="Hoe kan ik je helpen"
                     name="message"
+                    required
                   />
                 </div>
               </div>
