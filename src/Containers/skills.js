@@ -1,57 +1,58 @@
 import React from "react";
-import skills from "./skills.json";
+import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import { times } from "../util";
 
-const Table = ({ tableData }) => {
-  return (
-    <div>
-      <h2>{tableData.title}</h2>
-      <table>
-        <thead>
-          <tr>
-            <th />
-            <th>Elementair niveau</th>
-            <th>Doorgroeiniveau</th>
-            <th>Integatieniveau</th>
-            <th>Expertniveau</th>
-          </tr>
-        </thead>
-        <tfoot>
-          <tr>
-            <th />
-            <th>Elementair niveau</th>
-            <th>Doorgroeiniveau</th>
-            <th>Integatieniveau</th>
-            <th>Expertniveau</th>
-          </tr>
-        </tfoot>
-        <tbody>{tableData.data.map(value => <Row rowData={value} />)}</tbody>
-      </table>
-    </div>
-  );
-};
-
-const Row = ({ rowData }) => {
-  return (
-    <tr>
-      <th>{rowData.title}</th>
-      {rowData.data.map(columnData => <Column columnData={columnData} />)}
+const SkillRows = ({ skills }) =>
+  Object.entries(skills).map(([skill, value]) => (
+    <tr key={skill}>
+      <td>{skill}</td>
+      <td>
+        {times(value).map(_ => (
+          <FontAwesomeIcon
+            key={Math.random()}
+            icon={["fas", "star"]}
+            style={{ color: "orange" }}
+          />
+        ))}
+      </td>
     </tr>
-  );
-};
-
-const Column = ({ columnData }) => {
-  if (typeof columnData === "string") {
-    return <td>{columnData}</td>;
-  } else {
-    return <td>{columnData.map(value => <p>{value}</p>)}</td>;
-  }
-};
+  ));
 
 export default class extends React.Component {
   render() {
+    const skills = {
+      Javascript: 5,
+      React: 4,
+      HTML: 4,
+      Java: 4,
+      Linux: 3,
+      Networking: 3,
+      Docker: 2,
+      "C++": 2,
+      Python: 2,
+      "C#": 1,
+      CSS: 1
+    };
+
     return (
       <div className="content">
         <h1>Skills</h1>
+        <h2>IT-skills</h2>
+        <p>
+          Rating scale: 1 - 5 waarbij 1 = basis kennis en 5 = uitstekende kennis
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Hoeveel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <SkillRows skills={skills} />
+          </tbody>
+        </table>
+        <h2>Soft-skills</h2>
         <p>
           Omdat ik bezig ben met mijn toegepaste informatica opleiding bezit of
           ben ik bezig met het trainen van onderstaande skills:
