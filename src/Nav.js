@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-static";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import { classNames } from "./util.js";
+import { classNames, toggle } from "./util.js";
 
 export default class extends React.Component {
   constructor(props) {
@@ -13,7 +13,10 @@ export default class extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-transparent is-primary">
+      <nav
+        className="navbar is-transparent is-primary"
+        style={{ marginBottom: 10 }}
+      >
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item" to="/">
@@ -83,7 +86,7 @@ export default class extends React.Component {
 
   handleBurgerClick() {
     this.setState(prevState => ({
-      active: !prevState.active
+      active: toggle(prevState.active)
     }));
   }
 }
