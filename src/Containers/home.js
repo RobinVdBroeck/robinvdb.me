@@ -26,8 +26,8 @@ export default class extends React.Component {
                 op via het formulier op deze site. Ik neem dan zo snel mogelijk
                 contact met u op. Indien u zelf contact met mij wilt opnemen,
                 kunt u mijn gegevens vinden op mijn CV. (Te downloaden in de
-                balk hierboven) Ik zet deze om spam te vermijden niet in
-                plaintext op de site.
+                balk hierboven) Ik zet deze om spam te vermijden niet in direct
+                op de site.
                 <br />
                 <br />
                 Met vriendelijke groeten, <br />
