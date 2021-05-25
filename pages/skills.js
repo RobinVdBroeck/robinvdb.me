@@ -1,5 +1,6 @@
 import React from "react";
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { times } from "../components/util";
 import Layout from "../components/layout";
 
@@ -11,7 +12,7 @@ const SkillRows = ({ skills }) =>
         {times(value).map((_) => (
           <FontAwesomeIcon
             key={Math.random()}
-            icon={["fas", "star"]}
+            icon={faStar}
             style={{ color: "orange" }}
           />
         ))}

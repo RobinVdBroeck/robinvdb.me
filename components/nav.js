@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { classNames } from "./util.js";
 
@@ -20,7 +22,7 @@ export default function Nav() {
           <Link href="/">
             <div className="navbar-item">
               <span className="icon">
-                <FontAwesomeIcon icon={["fas", "desktop"]} />
+                <FontAwesomeIcon icon={faDesktop} />
               </span>
               RobinVdB.me
             </div>
@@ -58,7 +60,7 @@ export default function Nav() {
           <div className="navbar-end">
             <a href="https://github.com/RobinvdBroeck" className="navbar-item">
               <span className="icon">
-                <FontAwesomeIcon fixedWidth icon={["fab", "github"]} />
+                <FontAwesomeIcon fixedWidth icon={faGithub} />
               </span>
               <span>Github</span>
             </a>
@@ -67,7 +69,7 @@ export default function Nav() {
               className="navbar-item"
             >
               <span className="icon">
-                <FontAwesomeIcon fixedWidth icon={["fab", "linkedin"]} />
+                <FontAwesomeIcon fixedWidth icon={faLinkedin} />
               </span>
               <span>LinkedIn</span>
             </a>

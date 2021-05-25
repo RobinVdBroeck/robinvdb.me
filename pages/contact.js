@@ -1,5 +1,10 @@
 import React from "react";
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faEnvelope,
+  faMobile,
+} from "@fortawesome/free-solid-svg-icons";
 import Layout from "../components/layout";
 
 export default function Contact() {
@@ -27,7 +32,7 @@ export default function Contact() {
                     required
                   />
                   <span className="icon is-small is-left">
-                    <FontAwesomeIcon icon={["fas", "user"]} />
+                    <FontAwesomeIcon icon={faUser} />
                   </span>
                 </div>
               </div>
@@ -41,7 +46,7 @@ export default function Contact() {
                     required
                   />
                   <span className="icon is-small is-left">
-                    <FontAwesomeIcon icon={["fas", "envelope"]} />
+                    <FontAwesomeIcon icon={faEnvelope} />
                   </span>
                 </div>
               </div>
@@ -60,7 +65,7 @@ export default function Contact() {
                     name="phone_number"
                   />
                   <span className="icon is-small is-left">
-                    <FontAwesomeIcon icon={["fas", "mobile"]} />
+                    <FontAwesomeIcon icon={faMobile} />
                   </span>
                 </div>
               </div>
