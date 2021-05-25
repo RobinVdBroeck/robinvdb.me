@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Layout from "../components/layout";
 
 export default class extends React.Component {
@@ -7,10 +8,11 @@ export default class extends React.Component {
       <Layout>
         <div className="columns">
           <div className="column">
-            <img
+            <Image
               src="/me.jpeg"
-              height="500"
-              width="500"
+              alt="Picture of Robin Van den Broeck, the author, smiling."
+              height={500}
+              width={500}
               style={{
                 borderRadius: "100%",
               }}
