@@ -1,12 +1,14 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
   faEnvelope,
   faMobile,
-} from "@fortawesome/free-solid-svg-icons";
-import Layout from "../components/layout";
+} from '@fortawesome/free-solid-svg-icons';
+import Layout from '../components/layout';
 
+// TODO: renable next line
+/* eslint-disable jsx-a11y/label-has-associated-control */
 export default function Contact() {
   return (
     <Layout>

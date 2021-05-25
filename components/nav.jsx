@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDesktop } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
-import { classNames } from "./util.js";
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
+import { classNames } from './util';
 
 export default function Nav() {
   const [active, setActive] = useState(false);
@@ -29,10 +29,13 @@ export default function Nav() {
           </Link>
           <div
             className={classNames({
-              "navbar-burger": true,
-              "is-active": active,
+              'navbar-burger': true,
+              'is-active': active,
             })}
             onClick={handleBurgerClick}
+            onKeyPress={handleBurgerClick}
+            role="menu"
+            tabIndex="0"
           >
             <span />
             <span />
@@ -42,8 +45,8 @@ export default function Nav() {
 
         <div
           className={classNames({
-            "navbar-menu": true,
-            "is-active": active,
+            'navbar-menu': true,
+            'is-active': active,
           })}
         >
           <div className="navbar-start">
