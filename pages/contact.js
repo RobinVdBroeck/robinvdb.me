@@ -1,12 +1,14 @@
 import React from "react";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import Layout from "../components/layout";
 
-export default class extends React.Component {
-  render() {
-    return (
+export default function Contact() {
+  return (
+    <Layout>
       <div>
         <form
           method="post"
+          /* TODO: update email */
           action="https://formspree.io/robin.vandenbroeck@student.ucll.be"
         >
           <input type="hidden" name="_language" value="nl" />
@@ -97,6 +99,6 @@ export default class extends React.Component {
           </div>
         </form>
       </div>
-    );
-  }
+    </Layout>
+  );
 }

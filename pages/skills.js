@@ -1,13 +1,14 @@
 import React from "react";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import { times } from "../util";
+import { times } from "../components/util";
+import Layout from "../components/layout";
 
 const SkillRows = ({ skills }) =>
   Object.entries(skills).map(([skill, value]) => (
     <tr key={skill}>
       <td>{skill}</td>
       <td>
-        {times(value).map(_ => (
+        {times(value).map((_) => (
           <FontAwesomeIcon
             key={Math.random()}
             icon={["fas", "star"]}
@@ -18,23 +19,23 @@ const SkillRows = ({ skills }) =>
     </tr>
   ));
 
-export default class extends React.Component {
-  render() {
-    const skills = {
-      Javascript: 5,
-      React: 4,
-      HTML: 4,
-      Java: 4,
-      Linux: 3,
-      Networking: 3,
-      Docker: 2,
-      "C++": 2,
-      Python: 2,
-      "C#": 1,
-      CSS: 1
-    };
+export default function Skills() {
+  const skills = {
+    Javascript: 5,
+    React: 4,
+    HTML: 4,
+    Java: 4,
+    Linux: 3,
+    Networking: 3,
+    Docker: 2,
+    "C++": 2,
+    Python: 2,
+    "C#": 1,
+    CSS: 1,
+  };
 
-    return (
+  return (
+    <Layout>
       <div className="content">
         <h1>Skills</h1>
         <h2>IT-skills</h2>
@@ -126,6 +127,6 @@ export default class extends React.Component {
           Source: <a href="/DLR.pdf">DLR.pdf</a>
         </p>
       </div>
-    );
-  }
+    </Layout>
+  );
 }
