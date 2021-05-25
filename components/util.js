@@ -1,13 +1,5 @@
 export const classNames = (classes) =>
   Object.entries(classes)
-    .filter(([key, value]) => value)
-    .map(([key, value]) => key)
+    .filter(([_, value]) => value)
+    .map(([key, _]) => key)
     .join(" ");
-
-export const times = (x, cb) => {
-  let arr = [];
-  for (let i = 0; i < x; i++) {
-    arr.push(i);
-  }
-  return arr;
-};

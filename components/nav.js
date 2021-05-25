@@ -50,9 +50,6 @@ export default function Nav() {
             <Link href="/projects">
               <div className="navbar-item">Projects</div>
             </Link>
-            <Link href="/skills">
-              <div className="navbar-item">Skills</div>
-            </Link>
             <Link href="/contact">
               <div className="navbar-item">Contact me</div>
             </Link>
