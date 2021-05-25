@@ -47,9 +47,6 @@ export default function Nav() {
           })}
         >
           <div className="navbar-start">
-            <Link href="/projects">
-              <div className="navbar-item">Projects</div>
-            </Link>
             <Link href="/contact">
               <div className="navbar-item">Contact me</div>
             </Link>
