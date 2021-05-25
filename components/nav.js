@@ -67,7 +67,7 @@ export default function Nav() {
               </span>
               <span>LinkedIn</span>
             </a>
-            <a href="/cv-nl.pdf" className="navbar-item">
+            <a href="/cv.pdf" className="navbar-item">
               CV
             </a>
           </div>
