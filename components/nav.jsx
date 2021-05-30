@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 import { classNames } from './util';
@@ -21,9 +20,6 @@ export default function Nav() {
         <div className="navbar-brand">
           <Link href="/">
             <div className="navbar-item">
-              <span className="icon">
-                <FontAwesomeIcon icon={faDesktop} />
-              </span>
               RobinVdB.me
             </div>
           </Link>

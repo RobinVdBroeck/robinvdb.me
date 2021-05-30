@@ -12,9 +12,9 @@ export default function Index() {
             alt="Picture of Robin Van den Broeck, the author, smiling."
             height={500}
             width={500}
-            style={{
-              borderRadius: '100%',
-            }}
+            priority
+            quality={100}
+            className="circle"
           />
         </div>
         <div className="column" style={{ height: '100%' }}>
