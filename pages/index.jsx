@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Layout from '../components/layout';
+import me from '../public/me.jpeg';
 
 export default function Index() {
   return (
@@ -8,10 +9,8 @@ export default function Index() {
       <div className="columns">
         <div className="column">
           <Image
-            src="/me.jpeg"
+            src={me}
             alt="Picture of Robin Van den Broeck, the author, smiling."
-            height={500}
-            width={500}
             priority
             quality={100}
             className="circle"
